@@ -1,0 +1,428 @@
+@import 'imports/google-sans' ,'imports/variables' , 'imports/reset' , 'imports/mixins' , 'imports/keyframes';
+
+body{
+    background-color: var(--negro);
+
+    @media screen and (max-width:700px){
+        font-size: 90%;
+    }
+
+}
+.header {
+    width:100%;
+    padding:1.7em 4.7%;
+    color:var(--blanco);
+    position: absolute;
+    top:0;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%);
+    z-index: 3;
+    
+    @include flex( row , nowrap , space-between , center );
+    &__h1{
+        width: 100%;
+        margin: 0 0 0 .3em;
+        @media screen and (max-width:700px){
+            width: 25%;
+        }
+    }
+    &__img{
+        width: 100%;
+        max-width: 8.3em;
+        fill: var(--rojo);
+    }
+    &__nav{
+        width: calc( 100% - 300px );
+        @media screen and (max-width:700px){
+            width: 68%;
+        }
+    }
+    &__ul{
+        @include flex( row , nowrap , flex-end , center );
+    }
+    &__li{
+        margin: 0 0 0 1em;
+        @media  screen and (max-width:700px) {
+            margin: 0 0 0 .4em;
+        }
+    }
+    &__login{
+        padding:.4em 1em;
+        border-radius: .2em;
+        background: var(--rojo);
+        font-size: 1em;
+        @media screen and (max-width:700px){
+            padding:.5em .7em;
+        }
+    }
+    &__svg{
+        width: .8em;
+        height: .8em;
+        margin: -.05em 0 0;
+        // width: 1em;
+        // height: 1em;
+        // margin: -.05em 0 0;
+    }
+}
+.select{
+    height: 2.5em;
+    margin: 0 .9em 0 0;
+    padding:  0 0 .1em .5em;
+    overflow: hidden;
+    border:1px solid white;
+    border-radius: .2em;
+    position: relative;
+    font-size: .9em;
+    @include flex( row , nowrap , flex-start , center );
+    
+
+    &::after{
+        content: '▼';
+        height: 100%;
+        position: absolute;
+        top:0%;
+        right: 10%;
+        @include flex( row , nowrap , center , center );
+        color:inherit;
+    }
+    // &::before{
+    //     content: '•';
+    //     height: 100%;
+    //     position: absolute;
+    //     top:0em;
+    //     left: .4em;
+    //     @include flex( row , nowrap , center , center );
+    //     color:inherit;
+    // }
+    &__span{
+        width: calc( 90% - 2em );
+        height: 1.9em;
+        @include flex( row, nowrap , center , center );
+        padding:.5em 1.1em .5em 1.5em;
+        
+    }
+    &__ul{}
+    &__li{}
+    &__a{
+        padding:.5em 1em;
+    }
+    &__span{}
+    &__svg{
+        width: .8em;
+        height: .8em;
+        margin: -.05em 0 0;
+        // width: 1em;
+        // height: 1em;
+        // margin: -.05em 0 0;
+    }
+
+}
+.landing{
+    width:100%;
+    min-height: 55vh;
+    padding:0 0 5vh;
+    // background: url(../assets/download.jpg) no-repeat center center / cover fixed ;
+    background: url(../assets/download.jpg) no-repeat center center / cover scroll;
+    @include flex( column , nowrap , center , center);
+    position: relative;
+    color:var(--blanco);
+    text-align: center;
+    @media screen and (min-width:1200px){
+        min-height: 80vh;
+    }
+    @media screen and (min-width:1024px){
+        min-height: 72vh;
+    }
+    @media screen and (max-width:700px){
+        font-size: 60%;
+        min-height: 80vh;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        top:0;
+        width:100%;
+        height: 100%;
+        background: rgba(0,0,0,.5);
+    }
+
+    &__h2{
+        max-width: 14em;
+        margin: 0 0 .3em;
+        font-size: 3.2em;
+        font-weight: 600;
+        line-height: 1.1em;
+        position: relative;
+        z-index: 2;
+        @media screen and (max-width:700px){
+            max-width: 10em;
+            line-height: 1.3em;
+        }
+    }
+    &__h3{
+        margin: 0 0 1.2em;
+        font-size: 1.6em;
+        position: relative;
+        z-index: 2;
+    }
+    &__p{
+        max-width: 40em;
+        margin: 0 0 1em;
+        font-size: 1.2em;
+        position: relative;
+        z-index: 2;
+
+        @media screen and (max-width:700px){
+            font-size:1.7em;
+        }
+    }
+    &__form{
+        width: 100%;
+        max-width: 39em;
+        position: relative;
+        z-index: 2;
+
+        @media screen and (max-width:700px){
+            @include flex( column , nowrap , center , center );
+        }
+        
+    }
+    &__input{
+        width:60%;
+        background-color: var(--blanco);
+        padding: .7em 1.4em;
+        font-size: 1.5em;
+        color:var(--gris);
+        &::placeholder{
+            color:lightgrey;
+        }
+        @media screen and (max-width:700px){
+         width:100%;
+         margin: 0 0 1em;
+         font-size: 1.9em;
+        }
+    }
+    &__submit{
+        width:40%;
+        background-color: var(--rojo);
+        padding: .7em 1.4em;
+        font-size: 1.5em;
+        @include flex( row , nowrap , center , center );
+        @media screen and (max-width:700px){
+            font-size: 1.9em;
+        }
+    }
+
+
+}
+.specs{
+    margin: 1em 0;
+    padding: 8vh 0;
+    border-top:.5em solid var(--gris);
+    @include flex( row , nowrap , center , center );
+    color:var(--blanco);
+
+   
+    &.inverso .specs__center{
+       flex-direction: row-reverse;
+        @media screen and (max-width:700px){
+            flex-direction: column;
+        }
+    }
+    &:nth-child(4){
+        border-bottom:.5em solid var(--gris);
+    }
+    &--first{
+        margin:0;
+    }
+    &__center{
+        width:92%;
+        max-width:730em;
+        @include flex( row , nowrap , space-between , center );
+        @media screen and (max-width:700px){
+            flex-direction: column;
+        }
+    }
+    &__col{
+        width: calc( 100% / 2 - 1em );
+        position: relative;
+        @media screen and (max-width:700px){
+         width: 90%;
+         text-align: center;
+        }
+    }
+    &__h4{
+        margin:0 0 .5em;
+        font-size: 3.2em;
+        font-weight: 600;
+        line-height: 1em;
+        @media screen and (max-width:700px){
+            font-size: 1.6em;
+        }
+    }
+    &__p{
+        font-size: 1.6em;
+        @media screen and (max-width:700px){
+            font-size: 1.3em;
+        }
+    }
+    &__video{
+        position: absolute;
+        top:0;
+        z-index: 1;
+
+        &--uno{
+            transform: scale(.8) translateY(10%);
+        }
+        &--dos{
+            transform: scale(.6) translateY(0%);
+        }
+
+    }
+    &__overlay{
+        position: relative;
+        z-index: 2;
+    }
+}
+.faq{   
+    @include flex( row , nowrap , center , center ); 
+    color:var(--blanco);
+    text-align: center;
+
+    @media screen and (max-width:700px){
+        font-size: .7em;
+    }
+
+    &__center{
+        width: 90%;
+        max-width: 49em;   
+    }
+    &__h3{
+        margin: 0 0 1em;
+        font-size: 3.1em;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    &__ul{
+        font-size: 1.6em;
+        text-align: left;
+    }
+    &__li{
+        height: 2.85em;
+        overflow: hidden;
+        background-color: var(--gris);
+        margin: .4em 0;
+        transition: all .5s ease;
+        
+        &.activo{
+            height: 17em;
+        }
+        &.activo .faq__svg{
+            transform: rotate(0deg);
+        }
+        // &:nth-of-type(2){}
+        
+    }
+    &__btn{
+        width:100%;
+        min-height: 3em;
+        border-bottom:1px solid var(--negro);
+        padding: 0 1.2em;
+        @include flex( row , nowrap , space-between , center );
+        cursor: pointer;
+    }
+    &__svg{
+        width:2em;
+        height:2em;
+        transition: all .5s ease;
+        transform: rotate(45deg);
+    }
+    &__info{
+        padding: 1.2em;
+    }
+    &__p{
+        margin: 0 0 1em;
+    }
+}
+.register{
+    margin: 1.4em 0 0;
+    padding: 2em 0;
+    @include flex( column , nowrap , center , center );
+    color:var(--blanco);
+    text-align: center;
+
+    
+
+    &__p{
+        max-width: 740em;
+        margin: 0 0 1em;
+        font-size: 1.2em;
+    }
+    &__form{
+        width: 90%;
+        max-width: 27em;
+        font-size: 1.5em;
+
+        @media screen and (max-width:700px){
+            @include flex( column , nowrap , center ,center );
+        }
+    }
+    &__input{
+        width: 70%;
+        padding: .8em 1em;
+        background: var(--blanco);
+        color:var(--gris);
+        @media screen and (max-width:700px){
+            width: 100%;
+            font-size: .7em;
+            margin: 0 0 1em;
+        }
+    }
+    &__submit{
+        width: 30%;
+        padding: .8em 1em;
+        background: var(--rojo);
+        @include flex( row , nowrap , center , center );
+        @media screen and (max-width:700px){
+            font-size: .7em;
+        }
+    }
+}
+.footer{
+    margin:3em 0 0;
+    padding: 8vh 0;
+    @include flex( row , nowrap , center , center );
+    border-top:.4em solid var(--gris);
+    color:var(--gris-f);
+
+    &__center{
+        width: 80%;
+        max-width: 55em;
+    }
+    &__fila{
+        @include flex( row , wrap , space-between , flex-start );
+    }
+    &__p{
+        margin: 0 0 1.5em;
+        font-size:1em;
+    }
+    &__ul{
+        margin: 0 0 2em;
+        font-size: .8em;
+
+        @media screen and (max-width:700px){
+            width: calc( 100% / 2 );
+        }
+    }
+    &__li{
+        margin: 0 0 1.4em;
+    }
+    &__select{
+        max-width: 150px;
+        margin: 0 0 1em;
+    }
+    .brand{
+        margin: 2.8em 0 0;
+        font-size: .8em;
+    }
+}

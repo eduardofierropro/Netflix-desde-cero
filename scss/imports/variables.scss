@@ -1,0 +1,37 @@
+/* Aquí definimos las Custom properties */
+:root{
+    
+    --rojo   : #e50914;
+    --blanco : white;
+    --gris   : #303030;
+    --gris-f : #757575;
+    --negro  : black;
+
+    /* Tipografía */
+    --tipo-principal        :'Netflix Sans Regular';
+
+}
+    
+/* Las adaptamos al modo oscuro */
+// @media (prefers-color-scheme: dark) {
+//     :root{
+//         --negro                 : #acacac;
+//         --negro-puro            : #FFF;
+//         --blanco                : #3b3b3f;
+//         --blanco-puro           : #000000;
+//         --blanco-hover          : #c9c9c9;
+//         --blanco-active         : #c6c6c6;
+//         --sombra-ppal           : #c9c9c9;
+//         --borde-negro           : #FFFFFF50;
+//         --naranja               : #fe823c;
+//         --descripcion           : #d5d5d5;
+//         --descripcion-border    : #dedede;
+    
+//     }
+// }
+/* Configuramos si un usuario ha activado el modo alto contraste. (BETA) */
+// @media (prefers-contrast: high){
+//     :root{
+//         
+//     }
+// }

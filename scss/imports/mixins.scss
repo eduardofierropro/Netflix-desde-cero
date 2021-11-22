@@ -1,0 +1,85 @@
+@mixin flex( $a, $b, $c, $d ){
+	display			: flex;
+	flex-flow		  : $a $b;
+	justify-content	: $c;
+	@if $b == 'nowrap' {
+		align-items		: $d;	
+	}@else{
+		align-content	: $d;
+	}	
+}
+@mixin neo( $estado ,$br , $dis1 ){
+	color			: var(--negro);
+	transition		: all .4s ease;
+	border-radius 	: $br ;
+	
+	@if $estado == 1 {
+		background-color	: var(--blanco);
+		box-shadow			: 
+			$dis1    $dis1    $dis1*2 var(--sombra-ppal),
+			$dis1*-1 $dis1*-1 $dis1*2 var(--sombra-sec),
+			inset 0 0 0 transparent,
+			inset 0 0 0 transparent;
+	}@else if $estado == 2 {
+		background-color	: var(--blanco);
+		box-shadow			: 
+			0 0 0 transparent,
+			0 0 0 transparent,
+			inset $dis1    $dis1    $dis1*2 var(--sombra-ppal),
+			inset $dis1*-1 $dis1*-1 $dis1*2 var(--sombra-sec);
+	}
+    
+}
+@mixin grid ( $repetirC , $grosorC , $repetirR , $grosorR , $gap ){
+	display					: grid;
+	grid-template-columns	: repeat( $repetirC , $grosorC );
+	@if $repetirR != 'initial' {
+		grid-template-rows	: repeat( $repetirR , $grosorR );
+	}
+	gap: $gap ;
+}
+@mixin sans( $grosor : 400 , $style : 'normal' ){
+	@if( $grosor == 100 ){
+		@if( $style == 'normal' ){
+			font-family: 'Product Sans Thin Regular';
+		}@else{
+			font-family: 'Product Sans Thin Italic';
+		}
+	}@else if( $grosor == 200 ){
+		@if( $style == 'normal' ){
+			font-family: 'Product Sans Light Regular';
+		}@else{
+			font-family: 'Product Sans Light Italic';
+		}
+	}@else if( $grosor == 300 ){
+		@if( $style == 'normal' ){
+			font-family: 'Product Sans Medium Regular';
+		}@else{
+			font-family: 'Product Sans Medium Italic';
+		}
+	}@else if( $grosor == 400 ){
+		@if( $style == 'normal' ){
+			font-family: 'Product Sans Regular';
+		}@else{
+			font-family: 'Product Sans Italic';
+		}
+	}@else if( $grosor == 500 ){
+		@if( $style == 'normal' ){
+			font-family: 'Product Sans Bold';
+		}@else{
+			font-family: 'Product Sans Bold Italic';
+		}
+	}@else if( $grosor == 600 ){
+		@if( $style == 'normal' ){
+			font-family: 'Product Sans Black Regular';
+		}@else{
+			font-family: 'Product Sans Black Italic';
+		}
+		
+	}
+	
+	
+	
+	
+	
+}
