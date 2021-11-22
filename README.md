@@ -12,20 +12,25 @@ Es un código programado en directo para entretenimiento.
 
 ## Vídeos relacionados en Youtube 🛠️
 
-* [Youtube] (https://www.youtube.com/watch?v=j1kdxDYejyg)
+* [Youtube](https://www.youtube.com/watch?v=WCUASu4V258)
 
 ## Desarrollado con 🛠️
 
-* [Visual Studio Code]
+* Visual Studio Code
 
 ## Autor ✒️
 **Eduardo Fierro** - *Documentación y trabajo inicial*
-* [Github] (https://github.com/eduardofierropro)
-* [Youtube] (https://youtube.com/EduardoFierroPro)
-* [Twitch] (https://twitch.tv/eduardofierropro)
-* [Instagram] (https://instagram.com/eduardofierro.pro)
-* [Twitter] (https://twitter.com/edfierropro)
+* [Youtube](https://youtube.com/EduardoFierroPro?sub_confirmation=1)
+* [Twitch](https://twitch.tv/eduardofierropro)
+* [TikTok](https://www.tiktok.com/@eduardofierro.pro?)
+* [Github](https://github.com/eduardofierropro)
+* [Instagram](https://instagram.com/eduardofierro.pro)
+* [Twitter](https://twitter.com/edfierropro)
+
+## Master/Cursos donde sor profesor 📚
+Soy profesor en la Escuela Trazos donde impartimos Cursos y Másters sobre desarrollo web con una bolsa de trabajo con Alta Empleabilidad. ¡Píde información sobre los cursos donde soy profesor desde este enlace!
+
+👉[http://colaboracion.eduardofierro.pro](http://colaboracion.eduardofierro.pro)
 
 ## Licencia 📄
 MIT Public License v3.0
-No puede usarse comencialmente.
