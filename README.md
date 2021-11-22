@@ -1,10 +1,11 @@
 ## Descripción
-Imitación de la web de Instagram para Ordenador en un directo de Twitch (https://www.twitch.tv/eduardofierropro)
+Imitación de la web de Netflix para Ordenador en un directo de Twitch (https://www.twitch.tv/eduardofierropro) y para ver en Youtube [https://www.youtube.com/watch?v=WCUASu4V258](https://www.youtube.com/watch?v=WCUASu4V258)
+
 No ha sido probado para tener soporte crossbrowsing.
 Si te ha gustado o te ha servido coméntalo en un directo o sígueme por Twitch y Youtube 😊
 
 ## Tiempo de programación ⏰
-Este ejemplo ha sido programado en X horas mientras charlábamos y comentábamos cosas en Twitch (https://www.twitch.tv/eduardofierropro)
+Este ejemplo ha sido programado en 5 horas mientras charlábamos y comentábamos cosas en Twitch (https://www.twitch.tv/eduardofierropro)
 
 ## Uso 🚀
 ¡Mira el código, modifícalo y disfruta!
@@ -12,7 +13,7 @@ Es un código programado en directo para entretenimiento.
 
 ## Vídeos relacionados en Youtube 🛠️
 
-* [Youtube](https://www.youtube.com/watch?v=WCUASu4V258)
+* [https://www.youtube.com/watch?v=WCUASu4V258](https://www.youtube.com/watch?v=WCUASu4V258)
 
 ## Desarrollado con 🛠️
 
