@@ -4,6 +4,10 @@ Imitación de la web de Netflix para Ordenador en un directo de Twitch (https://
 No ha sido probado para tener soporte crossbrowsing.
 Si te ha gustado o te ha servido coméntalo en un directo o sígueme por Twitch y Youtube 😊
 
+## URL para ver el resultado
+Para ver proyecto en directo puedes verlo aquí [https://eduardofierropro.github.io/Netflix-desde-cero/](https://eduardofierropro.github.io/Netflix-desde-cero/)
+
+
 ## Tiempo de programación ⏰
 Este ejemplo ha sido programado en 5 horas mientras charlábamos y comentábamos cosas en Twitch (https://www.twitch.tv/eduardofierropro)
 
