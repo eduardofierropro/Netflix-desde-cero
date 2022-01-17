@@ -1,4 +1,4 @@
-@import 'imports/google-sans' ,'imports/variables' , 'imports/reset' , 'imports/mixins' , 'imports/keyframes';
+@import 'imports/_google-sans' ,'imports/_variables' , 'imports/_reset' , 'imports/_mixins' , 'imports/_keyframes';
 
 body{
     background-color: var(--negro);
@@ -207,6 +207,8 @@ body{
         background-color: var(--rojo);
         padding: .7em 1.4em;
         font-size: 1.5em;
+        cursor: pointer;
+        
         @include flex( row , nowrap , center , center );
         @media screen and (max-width:700px){
             font-size: 1.9em;
