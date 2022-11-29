@@ -1,6 +1,6 @@
 ![Imagen del proyecto](https://github.com/eduardofierropro/Netflix-desde-cero/blob/main/assets/home1.png)
 
-# CopyCat Netflix 2021
+# CopyCat: Netflix 2021
 
 Imitación de la web de Netflix para Ordenador en un directo de Twitch (https://www.twitch.tv/eduardofierropro) y para ver en Youtube [https://www.youtube.com/watch?v=WCUASu4V258](https://www.youtube.com/watch?v=WCUASu4V258)
 
