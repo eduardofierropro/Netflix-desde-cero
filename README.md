@@ -5,7 +5,6 @@
 Imitación de la web de Netflix para Ordenador en un directo de Twitch (https://www.twitch.tv/eduardofierropro) y para ver en Youtube [https://www.youtube.com/watch?v=WCUASu4V258](https://www.youtube.com/watch?v=WCUASu4V258)
 
 [![Original website](https://img.shields.io/static/v1?label=&message=Original%20Site&color=4d94b3&style=for-the-badge)](https://www.netflix.com/es/)
-[![Live Site](https://img.shields.io/static/v1?label=&message=Live%20Site&color=6cccb4&style=for-the-badge)](https://eduardofierropro.github.io/Netflix-desde-cero)
 [![Github Repository](https://img.shields.io/static/v1?label=&message=Github%20Repository&color=000000&style=for-the-badge&logo=github&logoColor=white)](https://github.com/eduardofierropro/Netflix-desde-cero)
 [![Youtube](https://img.shields.io/static/v1?label=&message=ver%20en%20youtube&color=FF0000&logo=youtube&logoColor=white&style=for-the-badge)](https://youtu.be/WCUASu4V258)
 
